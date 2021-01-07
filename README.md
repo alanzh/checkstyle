@@ -183,3 +183,21 @@ are in the file named "LICENSE.apache20" in this directory.
 
 [drone]:https://cloud.drone.io/checkstyle/checkstyle
 [drone img]:https://cloud.drone.io/api/badges/checkstyle/checkstyle/status.svg
+
+
+### 定制 Java Code Style
+
+为了增加代码的「美感」, 进行了 java code style 的部分定制;
+
+因此, 需要同步定制 checkstyle。
+
+具体定制的内容:
+
+|项|原始取值|定制之后|定制时间|备注|
+|:----|:----|:----|:----|:----|
+|`Indentation`.`basicOffset`| 2 | 4 |20180731|行缩进|
+|`Indentation`.`caseIndent`| 2 | 4 |20180731|行缩进|
+|`Indentation`.`throwsIndent`| 4 | 8 |20180731|行缩进|
+|`Indentation`.`lineWrappingIndentation`| 4 | 8 |20180731|行缩进|
+|`Indentation`.`arrayInitIndent`| 2 | 4 |20180731|行缩进|
+|`LineLength`.`max`| 120 | 180 |20180801| 单行长度校验|
